@@ -1,3 +1,22 @@
 main {
     margin-top: 80px;
 }
+
+h3 {
+    color: cornflowerblue;
+}
+
+li {
+    font-size: 14px;
+}
+
+.blog-card {
+    margin-bottom: 40px;
+}
+
+footer {
+    border-top: 2px solid black;
+    margin-top: 40px;
+    padding: 50px;
+    background-color: #e2e2e2;
+}

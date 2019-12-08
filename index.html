@@ -15,22 +15,115 @@
             <a class="navbar-brand" href="./index.html">
                 <i class="fas fa-home"></i>
             </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <main class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-2">
                 <h1>Blog home page</h1>
             </div>
+
+            <div class="col-lg-2 col-md-12">
+
+                <h3>Usernames</h3>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-6">
+                        <ul class="response-list">
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>title1</td>
+                                <td>description1</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-10 col-md-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 blog-card">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/1500x600" class="card-img-top" alt="Img alt">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    Lorem ipsum
+                                </h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus bibendum ante sit amet orci auctor, vitae porttitor felis aliquet.
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 blog-card">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/1500x600" class="card-img-top" alt="Img alt">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    Lorem ipsum
+                                </h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus bibendum ante sit amet orci auctor, vitae porttitor felis aliquet.
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    Blog footer
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="./js/posts.js"></script>
 </body>
 </html>

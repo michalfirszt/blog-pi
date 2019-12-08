@@ -2,21 +2,32 @@ main {
     margin-top: 80px;
 }
 
+h1 {
+    font-family: Ubuntu;
+}
+
 h3 {
     color: cornflowerblue;
 }
 
-li {
-    font-size: 14px;
+ul li {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .blog-card {
     margin-bottom: 40px;
 }
 
+.card-body {
+    background-color: #f5f9ff;
+}
+
 footer {
     border-top: 2px solid black;
-    margin-top: 40px;
+    background: url("https://cdn.pixabay.com/photo/2018/04/16/16/16/sunset-3325080_960_720.jpg");
+    font-size: 16px;
+    font-weight: bold;
     padding: 50px;
-    background-color: #e2e2e2;
+    margin-top: 40px;
 }

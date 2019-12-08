@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Blog</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="./css/app.css">
@@ -13,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
-                <i class="fas fa-home"></i>
+                <span class="fas fa-home"></span>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navbar">
@@ -22,11 +23,22 @@
 
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./index.html">
+                                Action1
+                            </a>
+                            <a class="dropdown-item" href="./index.html">
+                                Action2
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./index.html">
+                                Something else
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -35,7 +47,7 @@
 
     <main class="container">
         <div class="row">
-            <div class="col-12 mb-2">
+            <div class="col-12 mt-2 mb-2">
                 <h1>Blog home page</h1>
             </div>
 
@@ -50,20 +62,21 @@
                         </ul>
                     </div>
                     <div class="col-lg-12 col-md-6">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Description</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>title1</td>
-                                <td>description1</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <input id="result" type="number" class="form-control" value="0">
+                            </div>
+                            <div class="col-6">
+                                <button id="addOne" class="btn btn-primary">
+                                    +1
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button id="subtractOne" class="btn btn-primary">
+                                    -1
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -82,7 +95,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Phasellus bibendum ante sit amet orci auctor, vitae porttitor felis aliquet.
                                 </p>
-                                <a href="#" class="btn btn-primary">
+                                <a href="./index.html" class="btn btn-primary">
                                     Read more
                                 </a>
                             </div>
@@ -99,13 +112,49 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Phasellus bibendum ante sit amet orci auctor, vitae porttitor felis aliquet.
                                 </p>
-                                <a href="#" class="btn btn-primary">
+                                <a href="./index.html" class="btn btn-primary">
                                     Read more
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Article</th>
+                            <th>Post</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>article1</td>
+                            <td>post1</td>
+                        </tr>
+                        <tr>
+                            <td>article2</td>
+                            <td>post2</td>
+                        </tr>
+                        <tr>
+                            <td>article3</td>
+                            <td>post3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center">
+                                Category
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Article footer</td>
+                            <td>Post footer</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
 
         </div>
@@ -125,5 +174,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="./js/posts.js"></script>
+    <script src="./js/numbers.js"></script>
 </body>
 </html>
